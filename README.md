@@ -8,7 +8,7 @@
 - Java (lombok - @Data-@AllArgsConstructor-@NoArgsConstructor )
 - Thymeleaf
 - Html
-- Mysql 
+
 
 
 ## Author
