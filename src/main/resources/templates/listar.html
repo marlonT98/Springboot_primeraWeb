@@ -20,14 +20,17 @@
         <td th:text="${persona.nombre}" ></td>
         <td th:text="${persona.edad}" ></td>
         <td>
-            <a href="${persona/eliminar}">Editar</a>
-            <a href="">Eliminar</a>
+            <a th:href="@{/persona/editar/{id}(id=${persona.id})}">Editar</a>
+            <a th:href="@{/persona/eliminar/{id}(id=${persona.id})}" >Eliminar</a>
         </td>
 
 
     </tr>
 
 </table>
+
+<a href="/persona/nueva" >nueva persona</a>
+
 
 
 </body>

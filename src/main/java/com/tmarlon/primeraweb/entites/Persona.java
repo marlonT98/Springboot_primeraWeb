@@ -1,8 +1,6 @@
 package com.tmarlon.primeraweb.entites;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,7 +13,9 @@ import lombok.NoArgsConstructor;
 public class Persona {
 
     @Id
-     private Long id;
+   @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
      private String nombre;
      private int edad;
 
